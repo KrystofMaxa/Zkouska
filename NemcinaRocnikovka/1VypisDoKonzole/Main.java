@@ -31,16 +31,19 @@ public class Main implements Serializable {
             String pr = sc.next();
             arr.add(new CelyObjekt(poradi,cz,de,pr));
         }
-        for(int k = 0; k<2; k++) {
+        for (int l = 0; l < 5; l++){
             chciPoradi = kon.nextInt();
-            System.out.println(arr.get(chciPoradi).cesky);
+            list.add(chciPoradi);
+        }
+        for(int k = 0; k<2; k++) {
+            System.out.println(arr.get(list.get(k)).cesky);
             pockat = kon.next();
-            System.out.println(arr.get(chciPoradi).nemecky);
+            System.out.println(arr.get(list.get(k)).nemecky);
             pockat = kon.next();
-            if (arr.get(chciPoradi).pravidelnost.equals("N")){
-                System.out.println(nepravid + " " + arr.get(chciPoradi).nemecky);
+            if (arr.get(list.get(k)).pravidelnost.equals("N")){
+                System.out.println(nepravid + " " + arr.get(list.get(k)).nemecky);
             }else {
-                System.out.println(pravid + " " + arr.get(chciPoradi).nemecky);
+                System.out.println(pravid + " " + arr.get(list.get(k)).nemecky);
             }
             pockat = kon.next();
         }
