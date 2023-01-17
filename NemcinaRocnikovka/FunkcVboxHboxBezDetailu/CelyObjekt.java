@@ -15,3 +15,4 @@ public class CelyObjekt extends HelloApplication {
                 ", nemeckyMinule='" + nemeckyMinule + '\'';
     }
 }
+

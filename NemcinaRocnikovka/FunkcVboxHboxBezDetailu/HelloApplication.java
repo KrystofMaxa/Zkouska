@@ -69,19 +69,19 @@ public class HelloApplication extends Application {
             arr.add(new CelyObjekt(poradi,cz,de,deM,pr));
         }
 
-        for (int i = 0; i<(arr.size()/2);i++){
+        for (int i = 0; i<(3);i++){
             VBox vboxArr = new VBox();
             hbox1.getChildren().add(vboxArr);
             arrVbox.add(vboxArr);
         }
-        for (int i = 0; i<(arr.size()/2);i++){
+        for (int i = 0; i<(6);i++){
             VBox vboxArr = new VBox();
             hbox2.getChildren().add(vboxArr);
             arrVbox.add(vboxArr);
         }
 
         dal.setOnAction(actionEvent -> {
-            if(l<4) {
+            if(l<3) {
                 if (p == 0) {
                     // HBox hbox = new HBox();
                     Label napis = new Label();
@@ -117,7 +117,7 @@ public class HelloApplication extends Application {
                         napis.setMinWidth(500);
                         napis.setMinHeight(50);
                         napis.setFont(font2);
-                        napis.setText(nepravid + " " + arr.get(Integer.parseInt(poradiSlova.getText())).nemeckyMinule);
+                        napis.setText(nepravid + " " + arr.get(Integer.parseInt(poradiSlova.getText())).nemeckyMinule+".");
                         arrVbox.get(l).getChildren().add(napis);
                         //   vboxHlavni.getChildren().add(hbox);
                     } else {
@@ -125,11 +125,14 @@ public class HelloApplication extends Application {
                         napis.setMinWidth(500);
                         napis.setMinHeight(50);
                         napis.setFont(font2);
-                        napis.setText(pravid + " " + arr.get(Integer.parseInt(poradiSlova.getText())).nemeckyMinule);
+                        napis.setText(pravid + " " + arr.get(Integer.parseInt(poradiSlova.getText())).nemeckyMinule+".");
                         arrVbox.get(l).getChildren().add(napis);
                         //     vboxHlavni.getChildren().add(hbox);
                     }
                     Label ohraniceni = new Label("-------------");
+                    ohraniceni.setMinWidth(500);
+                    ohraniceni.setMinHeight(50);
+                    ohraniceni.setFont(font2);
                     arrVbox.get(l).getChildren().add(ohraniceni);
                     p = 0; l++;
                 }
@@ -169,7 +172,7 @@ public class HelloApplication extends Application {
                         napis.setMinWidth(500);
                         napis.setMinHeight(50);
                         napis.setFont(font2);
-                        napis.setText(nepravid + " " + arr.get(Integer.parseInt(poradiSlova.getText())).nemeckyMinule);
+                        napis.setText(nepravid + " " + arr.get(Integer.parseInt(poradiSlova.getText())).nemeckyMinule+".");
                         arrVbox.get(l).getChildren().add(napis);
                         //   vboxHlavni.getChildren().add(hbox);
                     } else {
@@ -177,11 +180,14 @@ public class HelloApplication extends Application {
                         napis.setMinWidth(500);
                         napis.setMinHeight(50);
                         napis.setFont(font2);
-                        napis.setText(pravid + " " + arr.get(Integer.parseInt(poradiSlova.getText())).nemeckyMinule);
+                        napis.setText(pravid + " " + arr.get(Integer.parseInt(poradiSlova.getText())).nemeckyMinule+".");
                         arrVbox.get(l).getChildren().add(napis);
                         //     vboxHlavni.getChildren().add(hbox);
                     }
                     Label ohraniceni = new Label("-------------");
+                    ohraniceni.setMinWidth(500);
+                    ohraniceni.setMinHeight(50);
+                    ohraniceni.setFont(font2);
                     arrVbox.get(l).getChildren().add(ohraniceni);
                     p = 0;
                     l++;
